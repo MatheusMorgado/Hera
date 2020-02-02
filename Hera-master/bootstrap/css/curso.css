@@ -2,6 +2,13 @@
     margin-bottom: 15px;
 }
 
+#login .container {
+    margin-top: 5%;
+}
+
 #cursos .col-md-4 {
     margin-bottom: 15px;
+}
+.jumbotron {
+    background-image: url("lerolero.jpeg");
 }
