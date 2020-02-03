@@ -4,8 +4,10 @@ $("#login").validate({
         login_text: {
             required: true
         },
-        password: {
-            required: true
+        password:{
+            required:true,
+            minlength:7,
+            maxlength:21
         }
     }
 });
@@ -19,9 +21,7 @@ $("#registro").validate({
         },
         email: "required",
         cpf: {
-            required: true,
-            minlength: 11,
-            maxlength: 11
+            required: true
         },
         username: {
             required: true,
@@ -30,9 +30,7 @@ $("#registro").validate({
         }
         ,
         celular: {
-            required: true,
-            minlength: 11,
-            maxlength: 11
+            required: true
         },
         password:{
             required:true,
@@ -56,8 +54,6 @@ $("#registro").validate({
         },
         cep: {
             required: true,
-            minlength:10,
-            maxlength:10
         }
             
 
@@ -66,8 +62,9 @@ $("#registro").validate({
 
     }
 });
-$("#cpf").focus(function(){
-    this.value = ("999.999.999-99");
-})
+$("#cpf").mask("999.999.999-99" , {placeholder: "123.123.123-99"});
+$('#celular').mask('(00)0000-0000',{placeholder: "(00) 91234-1234"});
+$('#cep').mask('00000-000',{placeholder: "12345-678"});
+$('#date').mask('00/00/0000', {placeholder: "__/__/____"});
 
 });
