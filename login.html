@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="bootstrap/css/curso.css">
     <title>Olá, mundo!</title>
   </head>
   <body>
@@ -28,27 +28,31 @@
       </nav>
       </div>
 
-      <div id="login" class="container">
-        <form>
+      <div class="container">
+        <form id="login">
             <div class="form-group row">
-                 <label class="col-sm-2" for="nome">Email:</label>
+                 <label class="col-sm-2" for="login_text" >Login:</label>
                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="nome">
+                    <input type="text" class="form-control" name="login_text" id="login_text">
                  </div>
             </div>
             <!-- linha 2 -->
             <div class="form-group row">
                  <label class="col-sm-2" for="email">Senha:</label>
                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email">
+                    <input type="password" class="form-control" name="password" id="senha">
                  </div>
             </div>
               <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
        </div>
+
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/form-validation.js"></script>
+    
     <script src="popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>

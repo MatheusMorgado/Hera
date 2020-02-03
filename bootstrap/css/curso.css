@@ -1,3 +1,44 @@
 #professores .col-md-4 {
-    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#cursos .col-md-4 {
+    margin-top: 15px;
+}
+
+#comentarios .col-md-4 {
+    margin-top: 15px;
+}
+
+#login{
+    text-align: center;
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 30px;
+    max-width: 467px;
+}
+#login .form-group{
+    text-align: left;
+}
+#login .form-group label{
+    text-align: left;
+}
+
+#registro{
+    text-align: center;
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 30px;
+    max-width: 467px;
+}
+
+#registo .form-group{
+    text-align: left;
+}
+#registo .form-group label{
+    text-align: left;
+}
+
+input.error{
+    border: 1px solid red
 }
